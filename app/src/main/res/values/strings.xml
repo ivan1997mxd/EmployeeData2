@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">EmployeeData2</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hint">Please enter the name of Employee</string>
+    <string name="trained">Trained</string>
+    <string name="is_trained">Trained: True</string>
+    <string name="not_trained">Trained: False</string>
+    <string name="is_certified">Certified: True</string>
+    <string name="not_certified">Certified: False</string>
+    <string name="certified">Certified</string>
+    <string name="submit">Submit</string>
+    <string name="back">Back</string>
+</resources>

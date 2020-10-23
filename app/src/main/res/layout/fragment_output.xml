@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="sheridan.tongche.employeedata2.model.Employee" />
+
+        <variable
+            name="employee"
+            type="Employee" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:context=".ui.OutputFragment">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{employee.name}" />
+
+        <TextView
+            android:id="@+id/trained"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{employee.trained ? @string/is_trained : @string/not_trained}" />
+
+        <TextView
+            android:id="@+id/certified"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{employee.certified ? @string/is_certified : @string/not_certified}" />
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/back" />
+    </LinearLayout>
+
+
+</layout>
